@@ -295,3 +295,4 @@ To add a provider, implement `AvailabilityProvider` or extend `ApiFirstProvider`
 - Add provider-specific extractors when a private API response shape becomes stable.
 - Consider a long-running deployment on a VPS, Fly.io, Render, or Railway for tighter polling than GitHub Actions can guarantee.
 - Add Slack/Discord/Email by implementing the `Notifier` interface and adding it to `NotifierChain`.
+# reserve-booking-watcher
