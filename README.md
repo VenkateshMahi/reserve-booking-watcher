@@ -81,16 +81,11 @@ curl "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates"
 Alert format:
 
 ```text
-🚨 BOOKINGS OPEN
-
-Movie:
-Jana Nayagan
+🚨 PVR: Palazzo, Nexus Vijaya Mall
+🎬 Jana Nayagan - BOOKINGS OPEN
 
 City:
 Chennai
-
-Theatre:
-PVR: Palazzo, Nexus Vijaya Mall
 
 Provider:
 bookmyshow

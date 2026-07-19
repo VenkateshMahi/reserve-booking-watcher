@@ -99,16 +99,11 @@ export function formatTelegramMessage(
       : [];
 
   return [
-    "🚨 BOOKINGS OPEN",
-    "",
-    "Movie:",
-    availability.movie,
+    `🚨 ${availability.theatre}`,
+    `🎬 ${availability.movie} - BOOKINGS OPEN`,
     "",
     "City:",
     availability.city,
-    "",
-    "Theatre:",
-    availability.theatre,
     "",
     "Provider:",
     provider,

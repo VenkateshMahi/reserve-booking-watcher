@@ -16,10 +16,10 @@ describe("formatTelegramMessage", () => {
     };
 
     const message = formatTelegramMessage(availability, "2026-07-19T00:01:00.000Z");
+    const lines = message.split("\n");
 
-    expect(message).toContain("BOOKINGS OPEN");
-    expect(message).toContain("Jana Nayagan");
-    expect(message).toContain("PVR Palazzo");
+    expect(lines[0]).toBe("🚨 PVR Palazzo");
+    expect(lines[1]).toBe("🎬 Jana Nayagan - BOOKINGS OPEN");
     expect(message).toContain("4:00 AM\n7:30 AM");
     expect(message).toContain("https://tickets.example/book");
   });

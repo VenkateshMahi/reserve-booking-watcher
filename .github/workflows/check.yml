@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   watcher:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, macOS, ARM64]
     timeout-minutes: 10
 
     steps:
@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browser
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install chromium
 
       - name: Typecheck
         run: npm run typecheck
