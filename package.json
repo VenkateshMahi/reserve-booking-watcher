@@ -1,0 +1,43 @@
+{
+  "name": "movie-booking-watcher",
+  "version": "0.1.0",
+  "description": "API-first movie ticket booking availability watcher with Telegram alerts.",
+  "type": "module",
+  "bin": {
+    "movie-booking-watcher": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "watch": "tsx src/index.ts --watch",
+    "discover": "tsx src/index.ts --discover",
+    "test:alert": "npm run build && node dist/index.js --test-alert",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "bookmyshow",
+    "district",
+    "movie",
+    "tickets",
+    "telegram",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.6"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

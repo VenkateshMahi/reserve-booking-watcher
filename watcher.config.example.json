@@ -1,0 +1,120 @@
+{
+  "movie": "Jana Nayagan",
+  "city": "Chennai",
+  "theatres": [
+    {
+      "id": "pvr-vr-chennai-anna-nagar",
+      "name": "PVR: VR Chennai, Anna Nagar",
+      "chain": "PVR",
+      "providers": ["BookMyShow"],
+      "priority": 1
+    },
+    {
+      "id": "pvr-palazzo-vadapalani",
+      "name": "PVR: Palazzo, Nexus Vijaya Mall",
+      "chain": "PVR",
+      "providers": ["BookMyShow"],
+      "priority": 1
+    },
+    {
+      "id": "pvr-ampa-mall",
+      "name": "PVR: Ampa Mall, Nelson Manickam Road",
+      "chain": "PVR",
+      "providers": ["BookMyShow"],
+      "priority": 1
+    },
+    {
+      "id": "ags-tnagar",
+      "name": "AGS Cinemas: T. Nagar",
+      "chain": "AGS",
+      "providers": ["BookMyShow"],
+      "priority": 1
+    },
+    {
+      "id": "ags-villivakkam",
+      "name": "AGS Cinemas: Villivakkam",
+      "chain": "AGS",
+      "providers": ["BookMyShow"],
+      "priority": 1
+    },
+    {
+      "id": "rakki-rgb-laser-4k-ambattur",
+      "name": "Rakki RGB Laser 4K - Ambattur",
+      "chain": "Rakki",
+      "providers": ["District"],
+      "priority": 1
+    },
+    {
+      "id": "kamala-cinemas-vadapalani",
+      "name": "Kamala Cinemas 4K RGB Laser Dolby, Vadapalani, Chennai",
+      "chain": "Kamala",
+      "providers": ["District"],
+      "priority": 1
+    },
+    {
+      "id": "murugan-cinemas-plf-ambattur",
+      "name": "Murugan Cinemas PLF 4K, Ambattur, Chennai",
+      "chain": "Murugan",
+      "providers": ["District"],
+      "priority": 1
+    },
+    {
+      "id": "sangam-cinemas",
+      "name": "Sangam Cinemas",
+      "chain": "Independent",
+      "providers": ["BookMyShow"],
+      "priority": 2
+    },
+    {
+      "id": "sangam-cinemas-kilpauk",
+      "name": "Sangam Cinemas 4K RGB Laser Dolby Atmos, Kilpauk, Chennai",
+      "chain": "Sangam",
+      "providers": ["District"],
+      "priority": 2
+    },
+    {
+      "id": "ags-maduravoyal",
+      "name": "AGS Cinemas: Maduravoyal",
+      "chain": "AGS",
+      "providers": ["BookMyShow"],
+      "priority": 2
+    },
+    {
+      "id": "pvr-aerohub-chennai-airport",
+      "name": "PVR: Aerohub, Chennai Airport",
+      "chain": "PVR",
+      "providers": ["BookMyShow"],
+      "priority": 2
+    },
+    {
+      "id": "vels-theatres-chennai",
+      "name": "Vels Theatres: Chennai",
+      "chain": "Vels",
+      "providers": ["BookMyShow"],
+      "priority": 3
+    },
+    {
+      "id": "ega-cinemas-kilpauk",
+      "name": "EGA Cinemas (RGB LASER | Dolby Audio | Couple Sofa), Kilpauk, Chennai",
+      "chain": "EGA",
+      "providers": ["District"],
+      "priority": 2
+    }
+  ],
+  "pollInterval": "5m",
+  "providers": ["bookmyshow", "district"],
+  "stateFile": ".watcher/state.json",
+  "discoveryDir": ".watcher/discovery",
+  "browserFallback": true,
+  "providerTimeoutMs": 30000,
+  "providerOptions": {
+    "bookmyshow": {
+      "startUrls": ["https://in.bookmyshow.com/explore/movies-chennai"],
+      "apiEndpoints": []
+    },
+    "district": {
+      "startUrls": ["https://www.district.in/chennai/movies"],
+      "apiEndpoints": []
+    }
+  }
+}

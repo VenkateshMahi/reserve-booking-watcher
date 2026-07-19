@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+.watcher/*.tmp
+.watcher/discovery/*.json
+.DS_Store

@@ -1,0 +1,89 @@
+name: Movie Booking Watcher
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: movie-booking-watcher
+  cancel-in-progress: false
+
+jobs:
+  watcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Run watcher
+        env:
+          MOVIE_NAME: ${{ vars.MOVIE_NAME || 'Jana Nayagan' }}
+          CITY: ${{ vars.CITY || 'Chennai' }}
+          THEATRES_JSON: ${{ vars.THEATRES_JSON }}
+          THEATRES_FILE: ${{ vars.THEATRES_FILE }}
+          THEATRES: ${{ vars.THEATRES }}
+          PROVIDERS: ${{ vars.PROVIDERS || 'bookmyshow,district' }}
+          POLL_INTERVAL: 5m
+          RUN_ONCE: "true"
+          LOG_LEVEL: ${{ vars.LOG_LEVEL || 'info' }}
+          NOTIFICATION_MODE: ${{ vars.NOTIFICATION_MODE || 'state-change' }}
+          STATE_FILE: .watcher/state.json
+          DISCOVERY_DIR: .watcher/discovery
+          BROWSER_FALLBACK: ${{ vars.BROWSER_FALLBACK || 'true' }}
+          BOOKMYSHOW_API_ENDPOINTS: ${{ secrets.BOOKMYSHOW_API_ENDPOINTS }}
+          DISTRICT_API_ENDPOINTS: ${{ secrets.DISTRICT_API_ENDPOINTS }}
+          BOOKMYSHOW_START_URLS: ${{ vars.BOOKMYSHOW_START_URLS }}
+          DISTRICT_START_URLS: ${{ vars.DISTRICT_START_URLS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FAIL_ON_PROVIDER_ERROR: "false"
+          FAIL_ON_NOTIFICATION_ERROR: "true"
+        run: npm start
+
+      - name: Persist watcher state
+        if: always()
+        run: |
+          if [ -f .watcher/state.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .watcher/state.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore: update watcher state [skip ci]"
+              git pull --rebase
+              git push
+            else
+              echo "No watcher state changes to persist."
+            fi
+          else
+            echo "No watcher state file produced."
+          fi
