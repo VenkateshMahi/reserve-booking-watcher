@@ -52,4 +52,18 @@ describe("loadConfig", () => {
 
     expect(config.notificationMode).toBe(NotificationMode.WhileAvailable);
   });
+
+  it("includes PVR SKLS Galaxy Red Hills as a BookMyShow priority 1 default target", () => {
+    const config = loadConfig({
+      CONFIG_FILE: "/tmp/movie-booking-watcher-missing-config.json"
+    });
+
+    expect(config.theatreTargets).toContainEqual({
+      id: "pvr-skls-galaxy-redhills",
+      name: "PVR: SKLS Galaxy Mall, Red Hills",
+      chain: "PVR",
+      providers: ["bookmyshow"],
+      priority: 1
+    });
+  });
 });

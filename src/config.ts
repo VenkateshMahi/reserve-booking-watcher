@@ -48,6 +48,13 @@ const defaultTheatreTargets: TheatreTarget[] = [
     priority: 1
   },
   {
+    id: "pvr-skls-galaxy-redhills",
+    name: "PVR: SKLS Galaxy Mall, Red Hills",
+    chain: "PVR",
+    providers: ["bookmyshow"],
+    priority: 1
+  },
+  {
     id: "ags-tnagar",
     name: "AGS Cinemas: T. Nagar",
     chain: "AGS",
