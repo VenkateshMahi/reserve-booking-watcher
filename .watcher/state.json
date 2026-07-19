@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19T18:44:08.641Z",
+  "updatedAt": "2026-07-19T19:16:41.284Z",
   "notifications": {
     "bookmyshow|chennai|jana nayagan|ags-tnagar": {
       "key": "bookmyshow|chennai|jana nayagan|ags-tnagar",
@@ -11,7 +11,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "ags-tnagar",
       "theatreChain": "AGS",
       "theatrePriority": 1
@@ -25,7 +25,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "ags-villivakkam",
       "theatreChain": "AGS",
       "theatrePriority": 1
@@ -39,7 +39,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "pvr-ampa-mall",
       "theatreChain": "PVR",
       "theatrePriority": 1
@@ -53,7 +53,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "pvr-palazzo-vadapalani",
       "theatreChain": "PVR",
       "theatrePriority": 1
@@ -67,7 +67,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "pvr-vr-chennai-anna-nagar",
       "theatreChain": "PVR",
       "theatrePriority": 1
@@ -81,7 +81,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "ags-maduravoyal",
       "theatreChain": "AGS",
       "theatrePriority": 2
@@ -95,7 +95,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "pvr-aerohub-chennai-airport",
       "theatreChain": "PVR",
       "theatrePriority": 2
@@ -109,7 +109,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "sangam-cinemas",
       "theatreChain": "Independent",
       "theatrePriority": 2
@@ -196,12 +196,27 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T18:43:50.837Z",
+      "lastCheckedAt": "2026-07-19T19:16:22.660Z",
       "theatreId": "vels-theatres-chennai",
       "theatreChain": "Vels",
       "theatrePriority": 3,
       "notifiedAt": "2026-07-19T18:05:47.661Z",
       "bookingUrl": "https://in.bookmyshow.com/movies/chennai/jana-nayagan/buytickets/ET00430817/20260723"
+    },
+    "district|chennai|jana nayagan|devi-cineplex-anna-salai": {
+      "key": "district|chennai|jana nayagan|devi-cineplex-anna-salai",
+      "provider": "district",
+      "movie": "Jana Nayagan",
+      "city": "Chennai",
+      "theatre": "Devi Cineplex, Anna Salai, Chennai",
+      "status": "NOT_AVAILABLE",
+      "showHash": "",
+      "shows": [],
+      "lastCheckedAt": "2026-07-19T19:16:27.889Z",
+      "theatreId": "devi-cineplex-anna-salai",
+      "theatreChain": "Devi",
+      "theatrePriority": 3,
+      "bookingUrl": "https://www.district.in/movies/jana-nayagan-movie-tickets-in-chennai-MV188681?frmtid=_dhnulbeya&fromdate=2026-07-23"
     }
   }
 }
