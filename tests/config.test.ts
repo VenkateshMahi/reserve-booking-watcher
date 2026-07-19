@@ -44,20 +44,6 @@ describe("loadConfig", () => {
     ]);
   });
 
-  it("includes Vels Theatres as a BookMyShow priority 3 default target", () => {
-    const config = loadConfig({
-      CONFIG_FILE: "/tmp/movie-booking-watcher-missing-config.json"
-    });
-
-    expect(config.theatreTargets).toContainEqual({
-      id: "vels-theatres-chennai",
-      name: "Vels Theatres: Chennai",
-      chain: "Vels",
-      providers: ["bookmyshow"],
-      priority: 3
-    });
-  });
-
   it("supports repeat notifications while availability remains open", () => {
     const config = loadConfig({
       CONFIG_FILE: "/tmp/movie-booking-watcher-missing-config.json",

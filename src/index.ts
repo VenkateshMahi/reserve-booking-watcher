@@ -225,11 +225,8 @@ function selectTestAlertTarget(config: WatcherConfig): TheatreTarget {
   const requestedTarget = requestedId
     ? config.theatreTargets.find((target) => target.id === requestedId)
     : undefined;
-  const velsTarget = config.theatreTargets.find(
-    (target) => target.id === "vels-theatres-chennai"
-  );
   const bookMyShowTarget = theatreTargetsForProvider(config.theatreTargets, "bookmyshow")[0];
-  const target = requestedTarget ?? velsTarget ?? bookMyShowTarget ?? config.theatreTargets[0];
+  const target = requestedTarget ?? bookMyShowTarget ?? config.theatreTargets[0];
 
   if (!target) {
     throw new Error("No theatre target is configured for test alert.");

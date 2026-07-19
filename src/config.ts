@@ -111,13 +111,6 @@ const defaultTheatreTargets: TheatreTarget[] = [
     priority: 2
   },
   {
-    id: "vels-theatres-chennai",
-    name: "Vels Theatres: Chennai",
-    chain: "Vels",
-    providers: ["bookmyshow"],
-    priority: 3
-  },
-  {
     id: "ega-cinemas-kilpauk",
     name: "EGA Cinemas (RGB LASER | Dolby Audio | Couple Sofa), Kilpauk, Chennai",
     chain: "EGA",

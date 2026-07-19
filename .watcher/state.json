@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19T19:29:04.228Z",
+  "updatedAt": "2026-07-19T21:33:42.128Z",
   "notifications": {
     "bookmyshow|chennai|jana nayagan|ags-tnagar": {
       "key": "bookmyshow|chennai|jana nayagan|ags-tnagar",
@@ -123,7 +123,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T19:16:09.093Z",
+      "lastCheckedAt": "2026-07-19T21:33:29.485Z",
       "theatreId": "murugan-cinemas-plf-ambattur",
       "theatreChain": "Murugan",
       "theatrePriority": 1,
@@ -138,7 +138,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T19:16:09.093Z",
+      "lastCheckedAt": "2026-07-19T21:33:29.485Z",
       "theatreId": "rakki-rgb-laser-4k-ambattur",
       "theatreChain": "Rakki",
       "theatrePriority": 1,
@@ -153,7 +153,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T19:16:09.093Z",
+      "lastCheckedAt": "2026-07-19T21:33:29.485Z",
       "theatreId": "ega-cinemas-kilpauk",
       "theatreChain": "EGA",
       "theatrePriority": 2,
@@ -168,7 +168,7 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T19:16:09.093Z",
+      "lastCheckedAt": "2026-07-19T21:33:29.485Z",
       "theatreId": "kamala-cinemas-vadapalani",
       "theatreChain": "Kamala",
       "theatrePriority": 1
@@ -182,34 +182,10 @@
       "status": "NOT_AVAILABLE",
       "showHash": "",
       "shows": [],
-      "lastCheckedAt": "2026-07-19T19:16:09.093Z",
+      "lastCheckedAt": "2026-07-19T21:33:29.485Z",
       "theatreId": "sangam-cinemas-kilpauk",
       "theatreChain": "Sangam",
       "theatrePriority": 2
-    },
-    "bookmyshow|chennai|jana nayagan|vels-theatres-chennai": {
-      "key": "bookmyshow|chennai|jana nayagan|vels-theatres-chennai",
-      "provider": "bookmyshow",
-      "movie": "Jana Nayagan",
-      "city": "Chennai",
-      "theatre": "Vels Theatres: Chennai",
-      "status": "AVAILABLE",
-      "showHash": "05:00 PM|07:50 PM|08:15 PM|08:30 PM|11:20 PM|11:45 PM|11:59 PM",
-      "shows": [
-        "05:00 PM",
-        "07:50 PM",
-        "08:15 PM",
-        "08:30 PM",
-        "11:20 PM",
-        "11:45 PM",
-        "11:59 PM"
-      ],
-      "lastCheckedAt": "2026-07-19T19:16:02.164Z",
-      "theatreId": "vels-theatres-chennai",
-      "theatreChain": "Vels",
-      "theatrePriority": 3,
-      "notifiedAt": "2026-07-19T19:16:08.178Z",
-      "bookingUrl": "https://in.bookmyshow.com/movies/chennai/jana-nayagan/buytickets/ET00430817/20260723"
     },
     "district|chennai|jana nayagan|devi-cineplex-anna-salai": {
       "key": "district|chennai|jana nayagan|devi-cineplex-anna-salai",
